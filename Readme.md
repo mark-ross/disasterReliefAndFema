@@ -25,3 +25,13 @@ Additionally, there may be people who want to help and can be trained by FDR.
 This project is in its early stages.  The foundational API of FEMA has been
 'sketched' and some of the filter options available.  Specifying a date filter
 fails to produce results, so more time is needed to debug this.
+
+# FEMA USAGE REQUIREMENTS
+This product uses the Federal Emergency Management Agency’s API, but is not endorsed by FEMA.
+
+This product accessing the information from the API on a per request.  Therefore the date
+associated with the information displayed will be the present date.  If any information is
+archived, please be sure to display that information.
+
+For more information, please see the 
+[FEMA API Terms and Conditions]("https://www.fema.gov/openfema-api-terms-conditions").

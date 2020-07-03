@@ -1,7 +1,7 @@
 package main
 
 import (
-	"disasterReliefAndFema/fema"
+	"github.com/mark-ross/disasterReliefAndFema/fema"
 	"github.com/sanity-io/litter"
 	"log"
 )
@@ -9,7 +9,7 @@ import (
 func main() {
 	data, err := fema.GetDisasterDeclarationsV2Data(
 		fema.WithMaxCount(2),
-		fema.WithStateFilter("TN"),
+		//fema.WithStateFilter("TN"),
 		fema.WithCurrentMonthFilter())
 	if err != nil {
 		log.Println("Unable to get the data...:", err)

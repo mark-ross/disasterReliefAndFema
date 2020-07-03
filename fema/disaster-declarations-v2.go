@@ -25,31 +25,31 @@ type DisasterDeclarationsElement struct {
 	// Agency standard method for uniquely identifying Stafford Act
 	// declarations - Concatenation of declaration type, disaster
 	// number and state code. Ex: DR-4393-NC
-	FEMADeclarationString string `json:"femaDeclarationString"`
+	FEMADeclarationString string `json:"femaDeclarationString";storm:"index"`
 
 	// DisasterNumber
 	//
 	// Sequentially assigned number used to designate an event or
 	// incident declared as a disaster. For more information on the
 	// disaster process, please visit https://www.fema.gov
-	DisasterNumber int `json:"disasterNumber"`
+	DisasterNumber int `json:"disasterNumber";storm:"unique"`
 
 	// State
 	//
 	// The name or phrase describing the U.S. state, districtor, or territory
-	State string `json:"state"`
+	State string `json:"state";storm:"index"`
 
 	// DeclarationType
 	//
 	// Two character code that defines if this is a major disaster,
 	// fire management, or emergency declaration. For more information
 	// on the disaster process, please visit https://www.fema.gov
-	DeclarationType string `json:"declarationType"`
+	DeclarationType string `json:"declarationType";storm:"index"`
 
 	// DeclarationDate
 	//
 	// Date the disaster was declared
-	DeclarationDate string `json:"declarationDate"`
+	DeclarationDate string `json:"declarationDate";storm:"index"`
 
 	// FiscalYearDeclared
 	//
